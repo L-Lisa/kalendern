@@ -1,0 +1,190 @@
+import { CalendarEvent, Tag } from "./types";
+
+// ─── TAGS ────────────────────────────────────────────────────────────────────
+// To add a new tag: add an entry here, then reference it in EVENTS below.
+
+export const TAGS: Tag[] = [
+  { label: "Nätverkande", bgColor: "#E8F0E4", textColor: "#3A6B2A" },
+  { label: "Jobbmässa", bgColor: "#FFF0E0", textColor: "#9C4A00" },
+  { label: "Öppet Hus", bgColor: "#E4EAF5", textColor: "#1A3A7A" },
+  { label: "Tech / IT", bgColor: "#F0E4F5", textColor: "#5A1A7A" },
+];
+
+// ─── EVENTS ──────────────────────────────────────────────────────────────────
+// To add a new event: copy an existing entry, update all fields, give it a
+// unique id (just increment the number), and set status: "active".
+//
+// Fields:
+//   date          – ISO format: "2026-03-10"
+//   timeRange     – "11:00–18:00" or null if unknown
+//   location      – venue name + city, or "Online", or null
+//   description   – max ~200 chars, or null
+//   tags          – must match a label in TAGS above
+//   isFree        – true for most events
+//   ctaLabel      – "Mer info" or "Registrera"
+//   url           – direct link to the event page (always verify before saving)
+//   isOutsidePeriod – true if outside the ROM participant's active period
+//   outsidePeriodLabel – label to show, e.g. "· utanför perioden"
+//   targetAudience – "Lärare & förskollärare" etc., or null
+//   status        – "active" | "draft" | "cancelled"
+
+export const EVENTS: CalendarEvent[] = [
+  {
+    id: "1",
+    title: "Tjejer Kodar – Dinner Club Stockholm",
+    date: "2026-02-26",
+    location: "Stockholm",
+    timeRange: null,
+    description:
+      "Nätverksträff för kvinnor inom tech. Träffa andra i branschen over middag i en avslappnad miljö.",
+    tags: ["Nätverkande", "Tech / IT"],
+    isFree: true,
+    ctaLabel: "Mer info",
+    url: "https://tjejer-kodar.confetti.events/tjejer-kodar-dinner-club-stockholm",
+    isOutsidePeriod: false,
+    outsidePeriodLabel: null,
+    targetAudience: null,
+    status: "active",
+  },
+  {
+    id: "2",
+    title: "YH-mässan Stockholm",
+    date: "2026-03-10",
+    location: "Downtown Camper by Scandic",
+    timeRange: "11:00–18:00",
+    description:
+      "Mässa för yrkeshögskoleutbildningar. Träffa skolor och lärare, lär dig mer om YH-utbildningar som leder till jobb.",
+    tags: ["Jobbmässa"],
+    isFree: true,
+    ctaLabel: "Mer info",
+    url: "https://www.yhguiden.se/reportage/yh-maessor-och-evenemang-en-komplett-guide",
+    isOutsidePeriod: false,
+    outsidePeriodLabel: null,
+    targetAudience: null,
+    status: "active",
+  },
+  {
+    id: "9",
+    title: "ThirdPlace Tech Thursday: Idéer i progress",
+    date: "2026-03-12",
+    location: "ThirdPlace ArtCafe & Sober Bar, Rödabergsgatan 11",
+    timeRange: "18:00–21:00",
+    description:
+      "Återkommande event för idédelning och nätverkande inom tech. Mikro-presentationer, öppen scen för pitches, mentorsamtal och matchmaking för samarbeten.",
+    tags: ["Nätverkande", "Tech / IT"],
+    isFree: true,
+    ctaLabel: "Mer info",
+    url: "https://www.third-place.se/events/thirdplace-tech-thursday-a-stage-for-ideas-in-progress-crowd-sourced-innovation-networking-1",
+    isOutsidePeriod: false,
+    outsidePeriodLabel: null,
+    targetAudience: null,
+    status: "active",
+  },
+  {
+    id: "3",
+    title: "Tjejer Kodar – Webinar med Partnerföretag",
+    date: "2026-03-12",
+    location: "Online",
+    timeRange: null,
+    description:
+      "Digitalt event där Tjejer Kodars partnerföretag presenterar sig och sina möjligheter för kvinnor i tech.",
+    tags: ["Tech / IT"],
+    isFree: true,
+    ctaLabel: "Registrera",
+    url: "https://tjejerkodar.se/events/",
+    isOutsidePeriod: false,
+    outsidePeriodLabel: null,
+    targetAudience: null,
+    status: "active",
+  },
+  {
+    id: "4",
+    title: "Medrekmässan Stockholm",
+    date: "2026-03-13",
+    location: "Scandic Downtown Camper",
+    timeRange: null,
+    description:
+      "Rekryteringsmässa för vård- och omsorgssektorn. Möt arbetsgivare och utbildningsanordnare inom hälsa och omsorg.",
+    tags: ["Jobbmässa"],
+    isFree: true,
+    ctaLabel: "Mer info",
+    url: "https://www.medrekmassan.se/for-besokare/",
+    isOutsidePeriod: false,
+    outsidePeriodLabel: null,
+    targetAudience: "Vård & omsorg",
+    status: "active",
+  },
+  {
+    id: "5",
+    title: "Stockholms Universitets Öppet Hus",
+    date: "2026-03-18",
+    location: "Campus Frescati, Aula Magna",
+    timeRange: "13:00–18:00",
+    description:
+      "Utforska utbildningar vid Stockholms Universitet. Träffa lärare och studenter, få svar på dina frågor om antagning och studieliv.",
+    tags: ["Öppet Hus"],
+    isFree: true,
+    ctaLabel: "Mer info",
+    url: "https://su.se/oppethus",
+    isOutsidePeriod: false,
+    outsidePeriodLabel: null,
+    targetAudience: null,
+    status: "active",
+  },
+  {
+    id: "6",
+    title: "Skoljobbsmässan Stockholm",
+    date: "2026-03-18",
+    location: "Kulturhuset, Sergels Torg",
+    timeRange: null,
+    description:
+      "Rekryteringsmässa för skolan. Träffa Stockholms kommunala skolor och privata aktörer som söker lärare och förskollärare.",
+    tags: ["Jobbmässa"],
+    isFree: true,
+    ctaLabel: "Mer info",
+    url: "https://www.skoljobbsmassan.se",
+    isOutsidePeriod: false,
+    outsidePeriodLabel: null,
+    targetAudience: "Lärare & förskollärare",
+    status: "active",
+  },
+  {
+    id: "7",
+    title: "Jobbmässa Täby",
+    date: "2026-03-27",
+    location: "Täby kommunhus, Esplanaden 3",
+    timeRange: "11:00–14:00",
+    description:
+      "Lokal jobbmässa i Täby. Möt lokala arbetsgivare och Arbetsförmedlingen, få råd om CV och jobbsökning.",
+    tags: ["Jobbmässa"],
+    isFree: true,
+    ctaLabel: "Mer info",
+    url: "https://www.taby.se/kampanjsidor/jobbmassa-27-mars/",
+    isOutsidePeriod: false,
+    outsidePeriodLabel: null,
+    targetAudience: null,
+    status: "active",
+  },
+  {
+    id: "8",
+    title: "WomenHack Stockholm",
+    date: "2026-04-22",
+    location: "Stockholm",
+    timeRange: "19:00",
+    description:
+      "Nätverksträff och rekryteringsevent för kvinnor inom tech. Träffa rekryterare och andra yrkesverksamma i en informell miljö.",
+    tags: ["Nätverkande", "Tech / IT"],
+    isFree: true,
+    ctaLabel: "Registrera",
+    url: "https://womenhack.com/events/",
+    isOutsidePeriod: false,
+    outsidePeriodLabel: null,
+    targetAudience: null,
+    status: "active",
+  },
+];
+
+// Helper: build a lookup map for tag colors
+export function buildTagMap(tags: Tag[]): Record<string, Tag> {
+  return Object.fromEntries(tags.map((t) => [t.label, t]));
+}
