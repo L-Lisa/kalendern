@@ -70,7 +70,7 @@ Taggar kan kombineras (t.ex. `["Nätverkande", "Tech / IT"]`). Nya taggar läggs
 
 | Källa | URL | Sök efter |
 |---|---|---|
-| Tjejer Kodar | https://tjejerkodar.se/events/ | Alla kommande events |
+| Tjejer Kodar | https://tjejerkodar.se/events/ | Gratis webinars och events — kvällar med kuvertavgift exkluderas |
 | WomenHack | https://womenhack.com/events/ | Stockholm-events |
 | Medrekmässan | https://www.medrekmassan.se/for-besokare/ | Datum och plats |
 | Skoljobbsmässan | https://www.skoljobbsmassan.se | Datum och anmälan |
@@ -79,6 +79,12 @@ Taggar kan kombineras (t.ex. `["Nätverkande", "Tech / IT"]`). Nya taggar läggs
 | Täby Kommun | https://www.taby.se/naringsliv-och-foretagande/ | Jobbmässor och event |
 | Stockholms Stad | https://www.stockholm.se/jobb-och-foretag | Karriärevent |
 | Arbetsmarknadsförvaltningen | https://start.stockholm/arbete-och-foretagande/ | Aktiviteter och event |
+| Jobbtorg Stockholm | https://socialtstod.stockholm/aktuellt/kalendarium/ | Rekryteringsträffar och "Vägen till jobb"-event |
+| Norrsken Foundation | https://www.norrsken.org/events | Filtrera på "Public" + Stockholm — frukostar, meetups, nätverkande |
+| Kista Science City | https://kistasciencecity.com/our-events/ | Tech Tuesday, Lunch Stories, Welcome Week — talent/ecosystem-event |
+| Epicenter | https://upcoming-events-at-epicenter.confetti.events/ | AI, sustainability, nätverkande — kolla teman och gratis-registrering |
+| Kistamässan | https://www.kistamassan.se/en/calendar/ | Stora publika mässor och konferenser — kolla om gratis besöksregistrering |
+| Microsoft Reactor Stockholm | https://www.meetup.com/microsoft-reactor-stockholm/ | Gratis online-events inom AI, karriär-adjacent tech-skills |
 
 ### Per termin (HT/VT)
 
