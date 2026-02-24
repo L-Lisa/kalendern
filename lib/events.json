@@ -6,7 +6,9 @@
     "location": "Ekholmsvägen 34, Skärholmen",
     "timeRange": "10:00–14:00",
     "description": "Träffa arbetsgivare, skolor och utbildningsanordnare. Ingen föranmälan krävs. Kaffe och smörgås ingår. Arrangerat av Jobbtorg Stockholm.",
-    "tags": ["Jobbmässa"],
+    "tags": [
+      "Jobbmässa"
+    ],
     "isFree": true,
     "ctaLabel": "Mer info",
     "url": "https://socialtstod.stockholm/aktuellt/kalendarium/2026/02/rekryteringstraff-i-skarholmen",
@@ -22,7 +24,10 @@
     "location": "Stockholm",
     "timeRange": null,
     "description": "Nätverksträff för kvinnor inom tech. Träffa andra i branschen over middag i en avslappnad miljö.",
-    "tags": ["Nätverkande", "Tech / IT"],
+    "tags": [
+      "Nätverkande",
+      "Tech / IT"
+    ],
     "isFree": true,
     "ctaLabel": "Mer info",
     "url": "https://tjejer-kodar.confetti.events/tjejer-kodar-dinner-club-stockholm",
@@ -38,7 +43,9 @@
     "location": "Online",
     "timeRange": "17:00–18:00",
     "description": "Lär dig köra AI-modeller lokalt med Foundry Local. Passar dig som vill förstå hur modern AI-infrastruktur fungerar och bygga praktiska färdigheter inför jobbmarknaden.",
-    "tags": ["Tech / IT"],
+    "tags": [
+      "Tech / IT"
+    ],
     "isFree": true,
     "ctaLabel": "Registrera",
     "url": "https://www.meetup.com/microsoft-reactor-stockholm/events/313211888/",
@@ -54,7 +61,9 @@
     "location": "Online",
     "timeRange": "19:00–20:00",
     "description": "Praktisk genomgång av säkerhet i AI-drivet utvecklingsarbete med GitHub Advanced Security och Microsoft Defender. Gratis webbinar för alla nivåer.",
-    "tags": ["Tech / IT"],
+    "tags": [
+      "Tech / IT"
+    ],
     "isFree": true,
     "ctaLabel": "Registrera",
     "url": "https://www.meetup.com/microsoft-reactor-stockholm/events/312466384/",
@@ -70,7 +79,9 @@
     "location": "Downtown Camper by Scandic",
     "timeRange": "11:00–18:00",
     "description": "Mässa för yrkeshögskoleutbildningar. Träffa skolor och lärare, lär dig mer om YH-utbildningar som leder till jobb.",
-    "tags": ["Jobbmässa"],
+    "tags": [
+      "Jobbmässa"
+    ],
     "isFree": true,
     "ctaLabel": "Mer info",
     "url": "https://www.yhguiden.se/reportage/yh-maessor-och-evenemang-en-komplett-guide",
@@ -86,7 +97,10 @@
     "location": "ThirdPlace ArtCafe & Sober Bar, Rödabergsgatan 11",
     "timeRange": "18:00–21:00",
     "description": "Återkommande event för idédelning och nätverkande inom tech. Mikro-presentationer, öppen scen för pitches, mentorsamtal och matchmaking för samarbeten.",
-    "tags": ["Nätverkande", "Tech / IT"],
+    "tags": [
+      "Nätverkande",
+      "Tech / IT"
+    ],
     "isFree": true,
     "ctaLabel": "Mer info",
     "url": "https://www.third-place.se/events/thirdplace-tech-thursday-a-stage-for-ideas-in-progress-crowd-sourced-innovation-networking-1",
@@ -102,7 +116,9 @@
     "location": "Online",
     "timeRange": null,
     "description": "Digitalt event där Tjejer Kodars partnerföretag presenterar sig och sina möjligheter för kvinnor i tech.",
-    "tags": ["Tech / IT"],
+    "tags": [
+      "Tech / IT"
+    ],
     "isFree": true,
     "ctaLabel": "Registrera",
     "url": "https://tjejerkodar.se/events/",
@@ -118,7 +134,9 @@
     "location": "Scandic Downtown Camper",
     "timeRange": null,
     "description": "Rekryteringsmässa för vård- och omsorgssektorn. Möt arbetsgivare och utbildningsanordnare inom hälsa och omsorg.",
-    "tags": ["Jobbmässa"],
+    "tags": [
+      "Jobbmässa"
+    ],
     "isFree": true,
     "ctaLabel": "Mer info",
     "url": "https://www.medrekmassan.se/for-besokare/",
@@ -134,7 +152,9 @@
     "location": "Campus Frescati, Aula Magna",
     "timeRange": "13:00–18:00",
     "description": "Utforska utbildningar vid Stockholms Universitet. Träffa lärare och studenter, få svar på dina frågor om antagning och studieliv.",
-    "tags": ["Öppet Hus"],
+    "tags": [
+      "Öppet Hus"
+    ],
     "isFree": true,
     "ctaLabel": "Mer info",
     "url": "https://su.se/oppethus",
@@ -150,7 +170,9 @@
     "location": "Kulturhuset, Sergels Torg",
     "timeRange": null,
     "description": "Rekryteringsmässa för skolan. Träffa Stockholms kommunala skolor och privata aktörer som söker lärare och förskollärare.",
-    "tags": ["Jobbmässa"],
+    "tags": [
+      "Jobbmässa"
+    ],
     "isFree": true,
     "ctaLabel": "Mer info",
     "url": "https://www.skoljobbsmassan.se",
@@ -166,7 +188,9 @@
     "location": "Täby kommunhus, Esplanaden 3",
     "timeRange": "11:00–14:00",
     "description": "Lokal jobbmässa i Täby. Möt lokala arbetsgivare och Arbetsförmedlingen, få råd om CV och jobbsökning.",
-    "tags": ["Jobbmässa"],
+    "tags": [
+      "Jobbmässa"
+    ],
     "isFree": true,
     "ctaLabel": "Mer info",
     "url": "https://www.taby.se/kampanjsidor/jobbmassa-27-mars/",
@@ -182,13 +206,34 @@
     "location": "Stockholm",
     "timeRange": "19:00",
     "description": "Nätverksträff och rekryteringsevent för kvinnor inom tech. Träffa rekryterare och andra yrkesverksamma i en informell miljö.",
-    "tags": ["Nätverkande", "Tech / IT"],
+    "tags": [
+      "Nätverkande",
+      "Tech / IT"
+    ],
     "isFree": true,
     "ctaLabel": "Registrera",
     "url": "https://womenhack.com/events/",
     "isOutsidePeriod": false,
     "outsidePeriodLabel": null,
     "targetAudience": null,
+    "status": "active"
+  },
+  {
+    "id": "1771954738192",
+    "title": "fantastiskt kul",
+    "date": "2026-02-27",
+    "location": "stockholm",
+    "timeRange": "11.00",
+    "description": "kul",
+    "tags": [
+      "Jobbmässa"
+    ],
+    "isFree": true,
+    "ctaLabel": "Mer info",
+    "url": "https://socialtstod.stockholm/aktuellt/kalendarium/2026/02/rekryteringstraff-i-skarholmen",
+    "targetAudience": null,
+    "isOutsidePeriod": false,
+    "outsidePeriodLabel": null,
     "status": "active"
   }
 ]
