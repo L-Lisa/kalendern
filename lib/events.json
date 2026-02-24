@@ -217,23 +217,5 @@
     "outsidePeriodLabel": null,
     "targetAudience": null,
     "status": "active"
-  },
-  {
-    "id": "1771954738192",
-    "title": "fantastiskt kul",
-    "date": "2026-02-27",
-    "location": "stockholm",
-    "timeRange": "11.00",
-    "description": "kul",
-    "tags": [
-      "Jobbmässa"
-    ],
-    "isFree": true,
-    "ctaLabel": "Mer info",
-    "url": "https://socialtstod.stockholm/aktuellt/kalendarium/2026/02/rekryteringstraff-i-skarholmen",
-    "targetAudience": null,
-    "isOutsidePeriod": false,
-    "outsidePeriodLabel": null,
-    "status": "active"
   }
 ]
