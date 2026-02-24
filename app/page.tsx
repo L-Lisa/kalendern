@@ -18,6 +18,13 @@ export default function Page() {
       className="mx-auto"
       style={{ maxWidth: "720px", padding: "60px 24px" }}
     >
+      {/* Admin link */}
+      <div className="flex justify-end mb-6">
+        <a href="/admin" className="text-xs text-muted hover:text-accent transition-colors">
+          + Lägg till event
+        </a>
+      </div>
+
       {/* Header */}
       <header className="mb-12">
         <h1

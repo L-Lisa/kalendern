@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { verifyPassword, addEvent } from "./actions";
+import { verifyPassword, addEvent, removeEvent } from "./actions";
 import { TAGS } from "@/lib/data";
 
 type Step = "password" | "form" | "success";
@@ -11,6 +11,8 @@ export default function AdminPage() {
   const [passwordInput, setPasswordInput] = useState("");
   const [passwordError, setPasswordError] = useState("");
   const [addedTitle, setAddedTitle] = useState("");
+  const [addedId, setAddedId] = useState("");
+  const [undone, setUndone] = useState(false);
   const [formError, setFormError] = useState("");
   const [isPending, startTransition] = useTransition();
 
@@ -51,6 +53,8 @@ export default function AdminPage() {
       const result = await addEvent(event);
       if (result.success) {
         setAddedTitle(event.title);
+        setAddedId(result.id ?? "");
+        setUndone(false);
         setStep("success");
       } else {
         setFormError(result.error ?? "Något gick fel. Försök igen.");
@@ -119,16 +123,45 @@ export default function AdminPage() {
           <h2 className="font-serif font-bold text-ink text-xl mb-2">
             Event tillagt!
           </h2>
-          <p className="text-muted text-sm mb-6">
-            <span className="font-medium text-ink">"{addedTitle}"</span> är
-            sparat och visas på sidan om ~1–2 minuter.
-          </p>
-          <button
-            onClick={() => setStep("form")}
-            className="text-accent text-sm font-medium hover:underline"
-          >
-            Lägg till ett till
-          </button>
+          {undone ? (
+            <p className="text-muted text-sm mb-6">
+              Eventet har tagits bort.
+            </p>
+          ) : (
+            <p className="text-muted text-sm mb-6">
+              <span className="font-medium text-ink">"{addedTitle}"</span> är
+              sparat och visas på sidan om ~1–2 minuter.
+            </p>
+          )}
+          <div className="flex flex-col items-center gap-3">
+            {!undone && (
+              <button
+                onClick={() =>
+                  startTransition(async () => {
+                    const result = await removeEvent(addedId);
+                    if (result.success) setUndone(true);
+                    else alert(result.error);
+                  })
+                }
+                disabled={isPending}
+                className="text-muted text-sm hover:text-red-500 transition-colors disabled:opacity-50"
+              >
+                {isPending ? "Ångrar…" : "Ångra"}
+              </button>
+            )}
+            <button
+              onClick={() => setStep("form")}
+              className="text-accent text-sm font-medium hover:underline"
+            >
+              Lägg till ett till
+            </button>
+            <a
+              href="/"
+              className="text-muted text-sm hover:text-accent transition-colors"
+            >
+              Till kalendern →
+            </a>
+          </div>
         </div>
       </div>
     );
